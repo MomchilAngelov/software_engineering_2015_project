@@ -1,0 +1,14 @@
+<xmp style="display:inline"><?php 
+$APIKEY = </xmp><span id = "get-this-element" contenteditable="true">""</span><xmp style="display:inline">;
+$page = file_get_contents('http://localhost/Project/get_all_posts.php?APIKEY='.$APIKEY);
+echo $page;
+?>
+
+<script>APIKEY = "<?php echo $APIKEY;?>";</script>
+<script src = "http://localhost/Project/API1.0.js"></script>
+
+<?php
+$page = file_get_contents("http://localhost/Project/1post.php");
+echo $page."<br/>";
+?>
+</xmp>
